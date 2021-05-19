@@ -1,0 +1,701 @@
+﻿
+<style>
+
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Xdc1UAw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUK0Zdc0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Gentium Book Basic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gentiumbookbasic/v11/pe0zMJCbPYBVokB1LHA9bbyaQb8ZGjc4ULF6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Gentium Book Basic Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gentiumbookbasic/v11/pe0wMJCbPYBVokB1LHA9bbyaQb8ZGjcw65RvzIfZ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/yesevaone/v15/OpNJno4ck8vc-xYpwWWxliNVWyXD.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/yesevaone/v15/OpNJno4ck8vc-xYpwWWxli1VWw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+
+p {
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* header section */
+
+.header{
+	margin:0 auto;
+}
+ 
+#social_header {
+	position: absolute;
+	top:48px;
+	left:180px;	
+	font-family: "Yeseva One"; 
+	font-size: 35.8px; 
+	font-weight: 700; 
+	color: rgb(0,0,0);
+}
+
+ul {
+ list-style:none;
+} 
+
+.topMenu {
+	z-index: 6;
+	position:absolute;
+	left:548px;
+}
+ 
+.topMenu ul li {
+	float:left;
+}
+ 
+.topMenu ul {
+	padding-left:0px;
+ }
+ 
+.topMenu ul li a{
+	margin-top:0px;
+	display:block;
+	text-decoration:none;
+	padding: 48px 25px;
+	font-family: 'Genium Book Basic Bold';
+    font-weight: 700;	
+	font-size: 21px;
+	color: rgb(255,255,255);
+ }
+ 
+.topMenu ul li a:hover{
+	background: url(images/active_state_header.png) 0px 0px no-repeat; 
+	background-position: center top;
+}
+
+.topmenu_2 {
+	letter-spacing:0.3px;
+}
+
+.topmenu_3 {
+	letter-spacing:0.8px;
+}
+
+.topmenu_5 {
+	letter-spacing:0.4px;
+}
+
+.topmenu_6 {
+	letter-spacing:0.6px;
+}
+  
+#headerInner { 
+	position:relative;
+	width:1600px;
+	height:110px;
+	background: url(images/bg_header_small.png) 0px 0px no-repeat; 
+	margin:0 auto;
+}
+
+#header_social_icons {
+	width:100px;
+	height:30px;
+	position:absolute;
+	left:1300px;
+	top:51px;
+}
+
+#header_social_icons a {
+	color: rgb(204,204,51);
+	text-decoration: none;
+}
+
+/* promo section */
+
+#promo {
+	margin:0 auto;
+	background: url(images/bg_promo_small.png) 0px 0px no-repeat;  
+	width: 1600px;
+	height:640px;
+	text-align:center;	
+}
+
+#promoInner {
+	width: 1600px;
+	margin:0 auto;
+	position: absolute;
+	text-align:center;
+}
+ 
+#promo_heading {
+	margin-top: 105px;
+	margin-bottom:23px;
+	font-family: "Yeseva One"; 
+	font-size: 90px; 
+	line-height: 118px;
+	font-weight: 400; 
+	color: rgb(255,255,255);
+} 
+ 
+#promo_buttons {
+	position:relative;
+	top:16px;
+	width:516px;
+	margin:0 auto; 
+}
+ 
+#promo button{
+	width: 228px;
+	height; 57px;
+	padding: 16px;
+	background: url(images/button_black.png) 0px 0px no-repeat; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;	
+	font-size: 18px;
+	color: rgb(255,255,255);
+	float:left;
+	margin:15px;
+	border: 1px solid black;
+}
+ 
+#promo button:hover{
+	background: url(images/button_white.png) 0px 0px no-repeat; 
+	border: 1px solid white;
+}
+
+/* about section */
+
+#about {
+	width:1600px;
+	height:710px;
+	background: url(images/bg_about.png) 0px 0px no-repeat; 
+	margin:0 auto; 
+}
+
+#about_left {
+	width:430px;
+	margin-left:285px;
+	float:left;
+	text-align:center;
+}
+
+#about_right {
+	float:left;
+	width:670px;
+	height:710px;
+	position: relative;
+}
+
+#about_heading {
+	margin-top: 110px;
+	margin-bottom:21px;
+	font-family: "Yeseva One"; 
+	font-size: 36px; 
+	font-weight: 400; 
+	color: rgb(204,153,0);
+}
+
+#about_text {
+	margin-top: 24px;
+	margin-bottom:49px; 
+}
+
+#img_cook {
+    margin-left: 70px;
+}
+
+#img_dish {
+	position: absolute;
+    margin: auto;
+    left: 0;
+    top: 25px;
+    bottom: 0;
+    right: 0;
+}
+
+/* ingredients section */
+
+#ingredients {
+	width:1600px;
+	height:758px;
+	background: url(images/bg_ingredients.png) 0px 0px no-repeat;
+	margin:0 auto;
+	position: relative; 	
+}
+
+#ingredients_content {
+	width:570px;
+	height:557px;
+	background: url(images/bg_ingredients_content.png) 0px 0px no-repeat; 
+	position: absolute;
+	left: 815px;
+	top: 100px;
+	text-align:center;	
+}
+
+#ingredients_heading {
+	margin-top: 85px;
+	margin-bottom:25px;
+	font-family: "Yeseva One"; 
+	font-size: 36px;  
+	font-weight: 400; 
+	color: rgb(200,200,200);
+}
+
+#ingredients_text {
+	margin-top: 20px;
+	margin-bottom:65px;
+	color: rgb(255,255,255); 
+}
+
+#img_ingredients2 {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/*menu section*/
+
+#menu {
+	width:1600px;
+	height:994px;
+	background: url(images/bg_menu.png) 0px 0px no-repeat; 
+	margin:0 auto;
+	position: relative; 	
+}
+
+#menu_content_left {
+	width:432px;
+	height:830px;
+	margin-left:283px;
+	margin-top:70px;
+	float:left;	
+	text-align:center;
+}
+
+#menu_content_right {
+	width:432px;
+	height:830px;
+	margin-left:168px;
+	margin-top:69px;
+	float:left; 
+	text-align:center;
+}
+
+.menu_heading {
+	padding-top: 39px;
+	font-family: "Yeseva One"; 
+	font-size: 36px; 
+	//line-height: 24px; 
+	font-style: normal; 
+	font-weight: 400; 
+	color: rgb(204,153,0);
+	//color: rgb(0,0,0);
+}
+
+.menu_divider {
+	margin-top:22px;
+	margin-bottom:24px;	
+}
+
+.menu_divider_dish {
+	float:left;
+	margin-top:9px;
+	margin-bottom:8px;
+}
+
+.menu_block {
+	width:432px;
+	height:98px; 
+	//border: 1px solid black;
+}
+
+.menu_dish_name, .menu_dish_price {
+	font-family: "Yeseva One";  
+	line-height: 24px; 
+	font-style: normal; 
+	font-weight: 400; 
+}
+
+.menu_dish_name {
+	float: left;
+	font-size: 21px;
+	color: rgb(204,153,0);
+	//color: rgb(0,0,0);
+}
+
+.menu_dish_price {
+	float: right;
+	font-size: 21px;
+	color: rgb(204,153,0);
+	//color: rgb(0,0,0);
+}
+
+.menu_dish_about {
+	float: left;
+	font-size: 16px; 
+	color: rgb(0,0,0);
+}
+
+#dish_special_left {
+	width:455px;
+	height:81px;
+	position: relative;
+	top:-226px;
+	left:-12px;
+	text-align:right;
+}
+
+#dish_special_right {
+	width:455px;
+	height:81px;
+	position: relative;
+	top:-324px;
+	left:-12px;;
+}
+
+.menu_marker_special {
+	font-family: "Lato";
+    font-weight: 400;	
+	font-size: 14px;
+	color: rgb(255,255,255);
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-left: 386px;
+	background: url(images/bg_menu_special.png) 0px 0px no-repeat;
+	background-position: bottom;	
+}
+
+/* reviews section */
+
+#reviews {
+	width:1600px;
+	height:755px;
+	background: url(images/bg_reviews.png) 0px 0px no-repeat;
+	margin:0 auto;
+	position: relative;	
+}
+
+#reviews_content {
+	width:770px;
+	height:557px;
+	background: url(images/bg_reviews_content.png) 0px 0px no-repeat; 
+	position: absolute;
+	left: 415px;
+	top: 100px;
+	text-align:center;	
+}
+
+#quotes {
+	position:absolute;
+	left:28px;
+	top:185px;
+	font-family: 'Georgia';
+    font-weight: 400;	
+	font-size: 95px;
+	line-height: 45px;
+	color: rgb(255,255,255);
+}
+
+#reviews_text {
+	margin-top: 17px;
+	font-family: "Gentium Book Basic Bold";
+    font-weight: 700;	
+	font-size: 25px;
+	line-height: 45px;
+	color: rgb(255,255,255);
+}
+
+#reviews_food {
+	margin-top: 22px;
+	font-family: "Lato";
+    font-weight: 400;	
+	font-size: 18px;
+	line-height: 45px;
+	color: rgb(255,255,255);
+}
+
+#reviews_heading {
+	margin-top: 83px;
+	margin-bottom:23px;
+	font-family: "Yeseva One"; 
+	font-size: 36px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	color: rgb(255,255,255);
+}
+
+/* reservations section */
+
+#reservations {
+	width:1600px;
+	height:708px;
+	background: url(images/bg_reservations.png) 0px 0px no-repeat; 
+	margin:0 auto;
+	position: relative;
+}
+
+#img_reservations1 {
+	float:left;
+	margin-top: 100px;
+	margin-left: 215px;
+}
+
+#img_reservations2 {
+	float:left;
+	margin-top: 100px;
+	margin-left: 30px; 
+}
+
+#reservations_content {
+	width:430px;
+	height:507px;
+	float:left;
+	margin-left: 100px;
+	margin-top: 100px;
+	text-align:center;	
+}
+
+#reservations_heading {
+	margin-top: 5px;
+	margin-bottom:22px;
+	font-family: "Yeseva One"; 
+	font-size: 36px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	color: rgb(204,153,0);
+}
+
+#reservations_text1 {
+	margin-top: 23px;
+}
+
+#reservations_text2 {
+	margin-top: 10px;
+}
+
+
+#reservations_bookingForm {
+	width:428px;
+	height:250px;
+}
+
+#input_name_heading {
+	margin-top:36px;
+	float:left;
+}
+
+#input_email_heading {
+	margin-top:36px;
+	float:right;
+}
+
+#input_date_heading {
+	margin-top:23px;
+	float:left;
+}
+
+#input_party_heading {
+	margin-top:23px;
+	float:right;
+}
+
+#input_name_heading, #input_email_heading, #input_date_heading, #input_party_heading{
+	font-family: "Open Sans"; 
+	font-size: 14px;
+	font-weight: 700; 
+	color: rgb(204,153,51);
+	text-align: left;
+}
+
+.input_name {
+	border: none;
+	width: 183px;
+	height: 34px;    
+	background: url(images/input_place.png) 0px 0px no-repeat; 
+	background-position: center;
+	font-family: "Open Sans Italic"; 
+	font-size: 16px; 
+	font-style: italic; 
+	font-weight: 400; 
+	color: rgb(0,0,0);
+	padding-left: 15px;
+	margin-top: 3px;
+	outline: 1px solid rgb(210,210,210);
+}
+
+.input_name:focus {
+	outline: 1px solid rgb(204,153,51);
+	box-shadow: rgb(204,153,51);
+}
+
+
+#btnBookNow {
+	//border: none;
+	width: 200px;
+	height: 36px;
+	margin-left: 3px;
+	margin-top: 33px;
+	font-family: "Open Sans"; 
+	font-size: 16px; 
+	font-style: normal; 
+	font-weight: 400; 
+	color: rgb(255,255,255);
+	background: rgb(204,153,51);
+}
+
+/* footer section */
+
+#footer {
+    width: 1600px;
+    height: 320px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#footerInner {
+    width: 1600px;
+    height: 320px;
+    background-color: rgb(25, 25, 25);
+	//background: url(images/bg_footer_full.png) 0px 0px no-repeat; 
+    position: relative;
+}
+
+#footer_column_1 {
+    width: 370px;
+    height: 218px;
+    float: left;
+    margin-left: 215px;
+    text-align: center;
+    margin-top: 52px;
+}
+
+#footer_column_2 {
+    width: 230px;
+    height: 218px;
+    float: left;
+    margin-left: 101px;
+    text-align: center;
+    margin-top: 52px;
+}
+
+#footer_column_3 {
+    width: 230px;
+    height: 218px;
+    float: left;
+    margin-left: 170px;
+    text-align: center;
+    margin-top: 52px;
+}
+
+.footer_heading {
+    font-family: "Yeseva One";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+.footer_text {
+     font-family: "Open Sans";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+     margin-top: 15px;
+     color: rgb(255, 255, 255);
+}
+
+.img_footer_divider {
+    margin-top: 16px;
+}
+
+#footer_icons_1 {
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    margin-top: 49px;
+    margin-left: 18px;
+}
+
+#footer_icons_2 {
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    margin-top: 49px;
+    margin-left: 18px;
+}
+
+#footer_icons_2 a {
+	color: rgb(255,255,255);
+	text-decoration: none;
+}
+
+
+</style>
+
+
